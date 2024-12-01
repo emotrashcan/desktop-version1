@@ -276,7 +276,7 @@ nav ul li a {
 
 .about-content {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   flex: 2;
 }
 
@@ -287,12 +287,45 @@ nav ul li a {
   line-height: 1.6;
 }
 
+.about1 {
+  flex: 1;
+  margin-right: 20px;
+}
+
+.languages,
+.frameworks,
+.skills {
+  margin: 20px 0;
+}
+
+.languages {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+}
+
+.languages .language-icons {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+}
+
+.languages div,
+.frameworks div {
+  display: inline-block;
+  margin-right: 10px;
+  padding: 10px;
+  background: #e7e7e7;
+  border-radius: 5px;
+  color: #333;
+}
+
 .skills {
   margin-top: 2rem;
-  flex: 1; /* Allows this section to sit on the right and take up less space */
+  flex: 1;
   display: flex;
   flex-direction: column;
-  align-items: flex-start; /* Ensures the skills content aligns properly */
+  align-items: flex-start;
   gap: 1rem;
 }
 
